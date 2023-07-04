@@ -51,17 +51,17 @@ header .inner #gnb {
     bottom: 0px;
     right: 0px;
 }
-header .inner #nb li {
+header .inner #gnb li {
     float: left;
 }
-header .inner #nb li a {
+header .inner #gnb li a {
     display: block; /* 인라인 요소는 block을 설저아여 크기 조절 가능 */
     font: bold 15px/1 "arial";
     color: #555;
     padding: 20px 40px;
     transition: all 0.5s;
 }
-header .inner #nb li a:hover{
+header .inner #gnb li a:hover{
     background: #555;
     color: #fff;
 }
@@ -112,4 +112,59 @@ figure .inner a {
 figure .inner a:hover {
     background: #fff;
     color: #555;
+}
+/* news */
+section {
+    width: 100%;
+    padding: 200px 0px;
+}
+section .inner {
+    width: 1180px;
+    margin: 0px auto;
+}
+section .inner h1 {
+    font: bold 24px/1 "arial";
+    color: #555;
+    text-align: center;
+    margin-bottom: 50px;
+}
+section .inner .wrap {
+    width: 100%;
+}
+section .inner .wrap:after { /* 자식 요소인 article의 float 해제*/
+    content: "";
+    display: block;
+    clear: both;
+}
+section .inner .wrap article{
+    width: 280px;
+    float: left;
+    margin-right: 20px;
+}
+section .inner .wrap article:last-child { /* 맨 오른쪽 마지막 요소의 여백만 제거 */
+    margin-right: 0px;
+}
+section .inner .wrap article h2 {
+    margin-bottom: 10px;
+}
+section .inner .wrap article h2 a {
+    font: bold 16px/1 "arial";
+    color: #555;
+}
+section .inner .wrap article p {
+    font: 14px/1.4 "arial";
+    color: #777;
+}
+section .inner .wrap article .pic {
+    width: 100%;
+    height: 120px;
+    background: #333;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+section .inner .wrap article .pic img {
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
