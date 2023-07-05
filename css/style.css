@@ -20,7 +20,7 @@ header{
 header .inner {
     width: 1180px;
     height: 120px;
-    margin: 0px auto;
+    margin: 25px 25px auto;
     position: relative; /* 자식 absolute 요소의 기준점 설정*/
 }
 header .inner h1 {
@@ -55,7 +55,7 @@ header .inner #gnb li {
     float: left;
 }
 header .inner #gnb li a {
-    display: block; /* 인라인 요소는 block을 설저아여 크기 조절 가능 */
+    display: block; /* 인라인 요소는 block을 설정하여 크기 조절 가능 */
     font: bold 15px/1 "arial";
     color: #555;
     padding: 20px 40px;
@@ -167,6 +167,9 @@ section .inner .wrap article .pic img {
     background-size: cover;
     width: 100%;
     height: 100%;
+}
+section .inner .wrap article details:hover{
+    cursor:pointer;
 }
 /* footer */
 footer {
