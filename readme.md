@@ -8,4 +8,4 @@ index.html과 css작업을 함. 포트폴리오 작성에 쓸 이미지를 구�
 section, footer 영역 추가, css 코드 작성. 포트폴리오 작성에 쓸 이미지를 수정.
 
 2023년 7월 5일
-carrer, who, project html 추가, github 페이지 추가, who.css 추가 및 css 코드 수정
+career, who, project html 추가, github 페이지 추가, who.css 추가 및 css 코드 수정
