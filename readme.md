@@ -9,3 +9,9 @@ section, footer 영역 추가, css 코드 작성. 포트폴리오 작성에 쓸 
 
 2023년 7월 5일
 career, who, project html 추가, github 페이지 추가, who.css 추가 및 css 코드 수정
+
+2023년 7월 6일
+프로젝트에 공간 추가
+
+2023년 7월 7일
+default 2 추가, 포트폴리오 변경
