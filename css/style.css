@@ -19,7 +19,7 @@ header{
 
 header .inner {
     width: 1180px;
-    height: 120px;
+    height: 50px;
     margin: 25px 25px auto;
     position: relative; /* 자식 absolute 요소의 기준점 설정*/
 }
@@ -172,13 +172,18 @@ section .inner .wrap article details:hover{
     cursor:pointer;
 }
 /* who */
+#who h1 {
+    text-align:center;
+}
 #who div {
     justify-content:center;
+    background-color:#444;
+    background-size: 250px 150px;
 }
 #who div img {
     width: 20%;
     height: 20%;
-    align-items:center;
+    float:left;
 }
 #who div ul {
     list-style:none;
@@ -190,7 +195,6 @@ section .inner .wrap article details:hover{
     margin: 0 0 0 0;
     padding: 10% 0 0 0;
     border: 0;
-    float: left;
 }
 /* project*/
 #project .inner .clone{
