@@ -176,26 +176,28 @@ section .inner .wrap article details:hover{
     text-align:center;
 }
 #who div {
-    justify-content:center;
     background-color:#444;
     background-size: 250px 150px;
 }
 #who div img {
     width: 20%;
     height: 20%;
-    float:left;
+}
+#who div p {
+    float:right;
 }
 #who div ul {
     list-style:none;
-    margin:10%;
+    margin:10px;
     padding:0;
     text-align:right;
 }
 #who div ul li {
     margin: 0 0 0 0;
-    padding: 10% 0 0 0;
+    padding: 0 0 0 0;
     border: 0;
 }
+
 /* project*/
 #project .inner .clone{
     float:left;
@@ -225,14 +227,17 @@ section .inner .wrap article details:hover{
     width: 100%;
     height: 100%;
 }
-.clone .card .front {
-    background: red;
+.clone .card .front:hover {
+    background: black;
+    opacity:.5;
+    animation-duration: 10s;
 }
 .back {
     transform: rotateY(180deg);
+    animation-duration:10ms;
 }
-.clone .back a:visited{
-    text-decoration:none;
+.clone .back a:visited {
+    text-decoration:black;
 }
 .clone:hover .card {
     transform: rotateY(180deg);

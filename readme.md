@@ -15,3 +15,6 @@ career, who, project html 추가, github 페이지 추가, who.css 추가 및 cs
 
 2023년 7월 7일
 default 2 추가, 포트폴리오 변경
+
+2023년 7월 9일
+기술역량 부분에 chart.js를 적용
