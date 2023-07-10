@@ -194,18 +194,19 @@ section .inner .wrap article details:hover{
 #who .intro .who_right {
     float:right;
     font-size:20px;
+    justify-content:right;
     position:relative;
-    margin-top: 15%;
-    margin-right: 5%;
-    color:#bbb
+    margin-top: 50px;
+    color:#bbb;
+    margin-right: 9%;
 }
 #who .who_right_down {
     list-style:none;
-    margin:10px;
     padding:0;
     font-size:20px;
-    margin-top: 10px;
+    margin-top: 50px;
     float:right;
+    margin-right:50%;
 }
 #who .who_right_down ul li {
     margin: 20px 10px 0px 10px;
@@ -214,7 +215,7 @@ section .inner .wrap article details:hover{
 }
 /* skill*/
 #skill {
-    margin-top:15%;
+    margin-top:100px;
     width:100%;
     height:500px;
 }
@@ -316,7 +317,30 @@ footer .inner .lower p {
     color: #777;
 }
 @media (max-width: 1200px){
+    figure .inner h1{
+        font: normal 60px/1 "arial";
+    }
     #who .intro .who_img img{
         display:none;
+    }
+    #who_right_down li{
+        text-align:center;
+        margin-right:30%;
+    }
+}
+@media (max-width: 760px){
+    figure .inner h1{
+        font: normal 40px/1 "arial";
+    }
+    #who .who_right p{
+        text-align:center;
+        font-size:13px;
+    }
+    #who .who_right_down{
+        margin-right:25%;
+    }
+    #who .who_right_down li{
+        font-size:13px;
+        text-align:center;
     }
 }
