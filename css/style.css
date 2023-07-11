@@ -47,6 +47,7 @@ header .inner .util li a {
     padding: 0px 10px;
 }
 header .inner #gnb {
+    float:right;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -60,6 +61,7 @@ header .inner #gnb li a {
     color: #555;
     padding: 20px 40px;
     transition: all 0.5s;
+    float:right;
 }
 header .inner #gnb li a:hover{
     background: #555;
@@ -172,32 +174,53 @@ section .inner .wrap article details:hover{
     cursor:pointer;
 }
 /* who */
+#who {
+    width:100%;
+    height:700px;
+}
 #who h1 {
     text-align:center;
 }
-#who div {
+#who .intro{
     background-color:#444;
-    background-size: 250px 150px;
+    background-size: 250px 250px;
+    width:auto;
+    height:500px;
 }
-#who div img {
-    width: 20%;
-    height: 20%;
+#who .intro .who_img img{
+    width: 400px;
+    height: 500px;
+    justify-content:left;
+    position:relative;
 }
-#who div p {
+#who .intro .who_right {
     float:right;
+    font-size:20px;
+    justify-content:right;
+    position:relative;
+    margin-top: 50px;
+    color:#bbb;
+    margin-right: 9%;
 }
-#who div ul {
+#who .who_right_down {
     list-style:none;
-    margin:10px;
     padding:0;
-    text-align:right;
+    font-size:20px;
+    margin-top: 50px;
+    float:right;
+    margin-right:50%;
 }
-#who div ul li {
-    margin: 0 0 0 0;
-    padding: 0 0 0 0;
+#who .who_right_down ul li {
+    margin: 20px 10px 0px 10px;
     border: 0;
+    position:relative;
 }
-
+/* skill*/
+#skill {
+    margin-top:100px;
+    width:100%;
+    height:500px;
+}
 /* project*/
 #project .inner .clone{
     float:left;
@@ -294,4 +317,52 @@ footer .inner .lower p {
     width: 100%;
     font: 12px/1 "arial";
     color: #777;
+}
+@media (max-width: 1200px){
+    header .inner h1 a{
+        font: bold 18px/1 "arial";
+    }
+    header .inner #gnb{
+        margin-right:35%;
+    }
+    figure .inner h1 a{
+        font: normal 60px/1 "arial";
+    }
+    #who .intro .who_img img{
+        display:none;
+    }
+    #who_right_down li{
+        text-align:center;
+        margin-right:30%;
+    }
+}
+@media (max-width: 760px){
+    header .inner h1 a{
+        font: bold 12px/1 "arial";
+    }
+    header .inner #gnb{
+        padding:10px 20px;
+        font:10px;
+        margin-right:59%;
+    }
+    header .inner #gnb li a {
+        display: block; /* 인라인 요소는 block을 설정하여 크기 조절 가능 */
+        font: bold 10px/1 "arial";
+        color: #555;
+        padding: 10px 20px;
+    }
+    figure .inner h1{
+        font: normal 40px/1 "arial";
+    }
+    #who .who_right p{
+        text-align:center;
+        font-size:13px;
+    }
+    #who .who_right_down{
+        margin-right:25%;
+    }
+    #who .who_right_down li{
+        font-size:13px;
+        text-align:center;
+    }
 }
