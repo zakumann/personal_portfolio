@@ -47,6 +47,7 @@ header .inner .util li a {
     padding: 0px 10px;
 }
 header .inner #gnb {
+    float:right;
     position: absolute;
     bottom: 0px;
     right: 0px;
@@ -60,6 +61,7 @@ header .inner #gnb li a {
     color: #555;
     padding: 20px 40px;
     transition: all 0.5s;
+    float:right;
 }
 header .inner #gnb li a:hover{
     background: #555;
@@ -317,7 +319,13 @@ footer .inner .lower p {
     color: #777;
 }
 @media (max-width: 1200px){
-    figure .inner h1{
+    header .inner h1 a{
+        font: bold 18px/1 "arial";
+    }
+    header .inner #gnb{
+        margin-right:35%;
+    }
+    figure .inner h1 a{
         font: normal 60px/1 "arial";
     }
     #who .intro .who_img img{
@@ -329,6 +337,20 @@ footer .inner .lower p {
     }
 }
 @media (max-width: 760px){
+    header .inner h1 a{
+        font: bold 12px/1 "arial";
+    }
+    header .inner #gnb{
+        padding:10px 20px;
+        font:10px;
+        margin-right:59%;
+    }
+    header .inner #gnb li a {
+        display: block; /* 인라인 요소는 block을 설정하여 크기 조절 가능 */
+        font: bold 10px/1 "arial";
+        color: #555;
+        padding: 10px 20px;
+    }
     figure .inner h1{
         font: normal 40px/1 "arial";
     }
