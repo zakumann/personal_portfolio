@@ -215,6 +215,9 @@ section .inner .wrap article details:hover{
     width:100%;
     height:500px;
 }
+#skill h1 {
+    text-align:center;
+}
 .slide {
     /* layout */
     display: flex;
@@ -340,7 +343,20 @@ section .inner .wrap article details:hover{
     flex-shrink: 0;
     transition: left 0.15s;
   }
+
+  .chart{
+    position: relative;
+    height: 50vh;
+    width: 60vw;
+  }
 /* project*/
+#project {
+    margin-top:400px;
+}
+#project h1 {
+    text-align:center;
+}
+
 #project .inner .clone{
     float:left;
     margin-right: 10%;
@@ -454,6 +470,21 @@ footer .inner .lower p {
         text-align:center;
         margin-right:30%;
     }
+    .slide{
+        width:80%;
+    }
+}
+@media (max-width: 950px){
+    .slide{
+        width:60%;
+    }
+    .slide_item.item1 img{
+        height:60%;
+    }
+    #project .inner .clone{
+        float:none;
+        margin:0px 0px 40px 4%;
+    }
 }
 @media (max-width: 760px){
     header .inner h1 a{
@@ -483,5 +514,17 @@ footer .inner .lower p {
     #who .who_right_down li{
         font-size:13px;
         text-align:center;
+    }
+    .slide{
+        width:40%;
+    }
+    .slide_item.item1 img{
+        height:60%;
+    }
+    .slide_item.item2 img {
+        height:50%;
+    }
+    .slide_item.item2 img {
+        height:50%;
     }
 }
