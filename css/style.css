@@ -18,7 +18,7 @@ header{
 }
 
 header .inner {
-    width: 1180px;
+    width: auto;
     height: 50px;
     margin: 25px 25px auto;
     position: relative; /* 자식 absolute 요소의 기준점 설정*/
@@ -465,7 +465,8 @@ footer .inner .lower p {
         font: bold 18px/1 "arial";
     }
     header .inner #gnb{
-        margin-right:35%;
+        font: bold 11px/1 "arial";
+        color: #555;
     }
     figure .inner h1 a{
         font: normal 60px/1 "arial";
@@ -506,14 +507,12 @@ footer .inner .lower p {
     }
     header .inner #gnb{
         padding:10px 20px;
-        font:10px;
-        margin-right:59%;
     }
     header .inner #gnb li a {
         display: block; /* 인라인 요소는 block을 설정하여 크기 조절 가능 */
         font: bold 10px/1 "arial";
         color: #555;
-        padding: 10px 20px;
+        padding: 5px 10px;
     }
     figure .inner h1{
         font: normal 40px/1 "arial";
@@ -537,5 +536,70 @@ footer .inner .lower p {
     }
     .slide_item.item3 img {
         height:50%;
+    }
+}
+@media (max-width: 360px){
+    header{
+        text-align:center;
+    }
+    header .inner h1 a{
+        font: bold 10px/1 "arial";
+        padding: 5px 10px;
+    }
+    header .inner #gnb{
+        width:360px;
+    }
+    header .inner #gnb li a{
+        font: bold 10px/1 "arial";
+        padding: 2px 2px;
+        float:right;
+    }
+    figure{
+        margin: 0 0 0 5%;
+    }
+    figure .inner h1 {
+        font: bold 20px/1 "arial";
+        text-align:center;
+    }
+    /*who*/
+    #who .intro {
+        margin: 0 0 0 15%;
+    }
+    #who .intro .who_right{
+        margin: 10% 10% 10% 10%;
+    }
+    #who .who_right_down{
+        margin: 10% 0 0 0;
+    }
+    /*skill*/
+    #skill .inner {
+        margin: 0 0 0 15% ;
+    }
+    .slide_item.item1 img{
+        height:30%;
+    }
+    .slide_item.item2 img{
+        height:30%;
+    }
+    .slide_item.item3 img{
+        height:30%;
+    }
+    .slide_item.item4 img{
+        height:30%;
+    }
+    .slide_item.item5 img{
+        height:30%;
+    }
+    /*project*/
+    .clone{
+        width: 350px;
+        height: 300px;
+        perspective: 1100px;
+        margin: 10% 0% 0% 11%;
+        align-content: center;
+    }
+    /*footer*/
+    footer{
+        margin-top: 0px;
     }
 }
