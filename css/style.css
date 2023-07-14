@@ -86,7 +86,7 @@ figure video {
     left: 0px;
 }
 figure .inner {
-    width: 1180px;
+    width: 100%;
     margin: 0px auto;
     position: relative;
 }
@@ -121,7 +121,7 @@ section {
     padding: 200px 0px;
 }
 section .inner {
-    width: 1180px;
+    width: 100%;
     margin: 0px auto;
 }
 section .inner h1 {
@@ -365,7 +365,8 @@ section .inner .wrap article details:hover{
     width: 400px;
     height: 300px;
     perspective: 1100px;
-    margin: auto;
+    margin: 0% 20% 0% 0%;
+    align-content: center;
 }
 .clone .card {
     width: 100%;
@@ -404,13 +405,15 @@ section .inner .wrap article details:hover{
 footer {
     margin-top:300px;
     width: 100%;
+    height:300px;
     background: #333;
     padding: 100px 0px;
     border-top: 1px solid #888;
 }
 footer .inner {
-    width: 1180px;
+    width: 100%;
     margin: 0px auto;
+    text-align:center;
 }
 footer .inner .upper {
     width: 100%;
@@ -423,15 +426,14 @@ footer .inner .upper::after{ /* 상단 영역 float 해제 */
     clear: both;
 }
 footer .inner .upper h1 {
-    float: left;
     font: bold 24px/1 "arial";
     color: #666;
 }
 footer .inner .upper ul {
-    float: right;
+    text-align:center;
 }
 footer .inner .upper ul li {
-    float: left;
+    float:none;
     margin-left: 20px;
 }
 footer .inner .upper ul li a {
@@ -453,6 +455,11 @@ footer .inner .lower p {
     font: 12px/1 "arial";
     color: #777;
 }
+@media (max-width: 1420px){
+    figure .inner h1 {
+        font: bold 75px/1 "arial";
+    }
+}
 @media (max-width: 1200px){
     header .inner h1 a{
         font: bold 18px/1 "arial";
@@ -473,17 +480,24 @@ footer .inner .lower p {
     .slide{
         width:80%;
     }
+    footer .inner .upper ul {
+        float: left;
+    }
+    footer .inner .upper ul li {
+        margin: 0 0 0 0;
+        margin-left: 50px;
+    }
 }
 @media (max-width: 950px){
-    .slide{
-        width:60%;
-    }
+
     .slide_item.item1 img{
-        height:60%;
+        height:80%;
     }
     #project .inner .clone{
         float:none;
-        margin:0px 0px 40px 4%;
+    }
+    footer .inner h1 {
+        text-align:center;
     }
 }
 @media (max-width: 760px){
@@ -515,16 +529,13 @@ footer .inner .lower p {
         font-size:13px;
         text-align:center;
     }
-    .slide{
-        width:40%;
-    }
     .slide_item.item1 img{
-        height:60%;
+        height:50%;
     }
     .slide_item.item2 img {
         height:50%;
     }
-    .slide_item.item2 img {
+    .slide_item.item3 img {
         height:50%;
     }
 }
