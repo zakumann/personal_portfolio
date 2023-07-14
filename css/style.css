@@ -482,11 +482,7 @@ footer .inner .lower p {
         width:80%;
     }
     footer .inner .upper ul {
-        float: left;
-    }
-    footer .inner .upper ul li {
-        margin: 0 0 0 0;
-        margin-left: 50px;
+        margin-top:5px;
     }
 }
 @media (max-width: 950px){
@@ -538,7 +534,7 @@ footer .inner .lower p {
         height:50%;
     }
 }
-@media (max-width: 360px){
+@media (max-width: 384px){
     header{
         text-align:center;
     }
@@ -566,34 +562,35 @@ footer .inner .lower p {
         margin: 10% 10% 10% 10%;
     }
     #who .who_right_down{
-        margin: 10% 0 0 0;
+        padding: 0 0 0 15%;
     }
     /*skill*/
     #skill .inner {
-        padding: 0 0 0 5% ;
+        padding: 0 0 0 10% ;
     }
     .slide_item.item1 img{
-        height:30%;
+        height:20%;
     }
     .slide_item.item2 img{
         height:30%;
     }
     .slide_item.item3 img{
-        height:30%;
+        height:20%;
+        width:30%;
     }
     .slide_item.item4 img{
-        height:30%;
+        height:20%;
+        width:30%;
     }
     .slide_item.item5 img{
-        height:30%;
+        height:20%;
     }
     /*project*/
     .clone{
-        width: 300px;
-        height: 300px;
+        width: 100%;
+        height: 200px;
         perspective: 1100px;
-        margin: 10% 0% 0% 11%;
-        align-content: center;
+        margin: 0% 0% 10% 0%;
     }
     /*footer*/
     footer{
