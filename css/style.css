@@ -118,7 +118,8 @@ figure .inner a:hover {
 /* news */
 section {
     width: 100%;
-    padding: 200px 0px;
+    height: 200px;
+    padding: 200px 10%;
 }
 section .inner {
     width: 100%;
@@ -168,7 +169,7 @@ section .inner .wrap article details:hover{
     cursor:pointer;
 }
 /* who */
-#who {
+#who .intro{
     width:100%;
     height:700px;
 }
@@ -194,7 +195,7 @@ section .inner .wrap article details:hover{
     position:relative;
     margin-top: 50px;
     color:#bbb;
-    margin-right: 9%;
+    margin-right: 4%;
 }
 #who .who_right_down {
     list-style:none;
@@ -211,9 +212,9 @@ section .inner .wrap article details:hover{
 }
 /* skill*/
 #skill {
-    margin-top:100px;
+    margin-top:300px;
     width:100%;
-    height:500px;
+    height:600px;
 }
 #skill h1 {
     text-align:center;
@@ -352,6 +353,9 @@ section .inner .wrap article details:hover{
 /* project*/
 #project {
     margin-top:400px;
+    margin-bottom: 500px;
+    width:100%;
+    height:500px;
 }
 #project h1 {
     text-align:center;
@@ -359,13 +363,13 @@ section .inner .wrap article details:hover{
 
 #project .inner .clone{
     float:left;
-    margin-right: 10%;
+    margin-right: 5%;
 }
 .clone{
     width: 400px;
     height: 300px;
     perspective: 1100px;
-    margin: 0% 20% 0% 0%;
+    margin: 0% 5% 50px 0%;
     align-content: center;
 }
 .clone .card {
@@ -459,6 +463,16 @@ footer .inner .lower p {
     figure .inner h1 {
         font: bold 75px/1 "arial";
     }
+    #who .intro .who_img img{
+    width: 230px;
+    height: 330px;
+    justify-content:left;
+    position:relative;
+    }
+    #who .intro .who_right {
+        font-size:17px;
+        justify-content:right;
+    }
 }
 @media (max-width: 1200px){
     header .inner h1 a{
@@ -474,6 +488,10 @@ footer .inner .lower p {
     #who .intro .who_img img{
         display:none;
     }
+    #who .intro .who_right {
+        font-size:15px;
+        justify-content:right;
+    }
     #who_right_down li{
         text-align:center;
         margin-right:30%;
@@ -481,14 +499,20 @@ footer .inner .lower p {
     .slide{
         width:80%;
     }
+    .slide_item.item1 img{
+        height:70%;
+    }
     footer .inner .upper ul {
         margin-top:5px;
     }
 }
 @media (max-width: 950px){
-
+    section {
+    width: 100%;
+    padding: 200px 10%;
+    }
     .slide_item.item1 img{
-        height:80%;
+        height:60%;
     }
     #project .inner .clone{
         float:none;
@@ -554,6 +578,10 @@ footer .inner .lower p {
         font: bold 20px/1 "arial";
         text-align:center;
     }
+    figure .inner a{
+        width: 100px;
+        text-align: center;
+    }
     /*who*/
     #who .intro {
         padding: 0 0 0 0%;
@@ -575,8 +603,8 @@ footer .inner .lower p {
         height:30%;
     }
     .slide_item.item3 img{
-        height:20%;
-        width:30%;
+        height: 20%;
+        width: 50%;
     }
     .slide_item.item4 img{
         height:20%;
