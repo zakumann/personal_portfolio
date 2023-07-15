@@ -190,7 +190,7 @@ section .inner .wrap article details:hover{
 }
 #who .intro .who_right {
     float:right;
-    font-size:20px;
+    font-size:19px;
     justify-content:right;
     position:relative;
     margin-top: 50px;
@@ -353,7 +353,6 @@ section .inner .wrap article details:hover{
 /* project*/
 #project {
     margin-top:400px;
-    margin-bottom: 500px;
     width:100%;
     height:500px;
 }
@@ -366,11 +365,15 @@ section .inner .wrap article details:hover{
     margin-right: 5%;
 }
 .clone{
-    width: 400px;
+    width: 100%;
+    max-width:500px;
     height: 300px;
     perspective: 1100px;
     margin: 0% 5% 50px 0%;
     align-content: center;
+}
+.clone .inner_clone{
+    align-content:center;
 }
 .clone .card {
     width: 100%;
@@ -407,7 +410,7 @@ section .inner .wrap article details:hover{
 }
 /* footer */
 footer {
-    margin-top:300px;
+    margin-top:500px;
     width: 100%;
     height:300px;
     background: #333;
@@ -549,13 +552,19 @@ footer .inner .lower p {
         text-align:center;
     }
     .slide_item.item1 img{
-        height:50%;
+        height:30%;
     }
     .slide_item.item2 img {
-        height:50%;
+        height:40%;
     }
     .slide_item.item3 img {
-        height:50%;
+        height:40%;
+    }
+    .slide_item.item4 img {
+        height:40%;
+    }
+    .slide_item.item5 img {
+        height:40%;
     }
 }
 @media (max-width: 384px){
@@ -600,7 +609,7 @@ footer .inner .lower p {
         height:20%;
     }
     .slide_item.item2 img{
-        height:30%;
+        height:35%;
     }
     .slide_item.item3 img{
         height: 20%;
@@ -608,7 +617,7 @@ footer .inner .lower p {
     }
     .slide_item.item4 img{
         height:20%;
-        width:30%;
+        width:40%;
     }
     .slide_item.item5 img{
         height:20%;
@@ -616,12 +625,7 @@ footer .inner .lower p {
     /*project*/
     .clone{
         width: 100%;
-        height: 200px;
         perspective: 1100px;
         margin: 0% 0% 10% 0%;
-    }
-    /*footer*/
-    footer{
-        margin-top: 0px;
     }
 }
