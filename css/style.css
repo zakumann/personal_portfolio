@@ -94,15 +94,12 @@ figure .inner h1 {
     font: normal 120px/1 "arial";
     color: #fff;
     margin-bottom: 20px;
+    text-align:center;
 }
-figure .inner p {
-    font: 16px/1.4 "arial";
-    color: #888;
-    margin-bottom: 60px;
-}
+
 figure .inner a {
     display: block;
-    width: 400px;
+    width: 100%;
     height: 30px;
     border: 1px solid #bbb;
     font: bold 11px/30px "arial";
@@ -177,6 +174,7 @@ section .inner .wrap article details:hover{
     text-align:center;
 }
 #who .intro{
+    display:flex;
     background-color:#444;
     background-size: 250px 250px;
     width:auto;
@@ -197,15 +195,14 @@ section .inner .wrap article details:hover{
     color:#bbb;
     margin-right: 4%;
 }
-#who .who_right_down {
+#who .intro .who_right_down {
     list-style:none;
     padding:0;
     font-size:20px;
-    margin-top: 50px;
-    float:right;
-    margin-right:50%;
+    margin: 0 auto;
+    padding-top:50px;
 }
-#who .who_right_down ul li {
+#who .intro .who_right_down ul li {
     margin: 20px 10px 0px 10px;
     border: 0;
     position:relative;
@@ -440,12 +437,16 @@ footer .inner .upper ul {
     text-align:center;
 }
 footer .inner .upper ul li {
+    margin-top:5px;
     float:none;
     margin-left: 20px;
 }
 footer .inner .upper ul li a {
     font: bold 14px/1 "arial";
     color: #666;
+}
+footer .inner .upper ul li a:hover {
+    color:#c0c0c0;
 }
 footer .inner .lower {
     width: 100%;
@@ -466,15 +467,26 @@ footer .inner .lower p {
     figure .inner h1 {
         font: bold 75px/1 "arial";
     }
-    #who .intro .who_img img{
-    width: 230px;
-    height: 330px;
-    justify-content:left;
-    position:relative;
+    #who .intro {
+        background-image:url(../img/JKLee.jpg);
+        background-repeat:no-repeat;
+        background-size: 400px 500px;
+        background-position: 50%;
+        background-color:#fff;
+        overflow:hidden;
     }
-    #who .intro .who_right {
+    #who .intro .who_img img{
+        display:none;
+    }
+    #who .intro .who_right{
         font-size:17px;
-        justify-content:right;
+        margin: 0 auto;
+        text-align:center;
+        color:#fff;
+        background-color:rgba(0,0,0,0.5);
+        width:100%;
+        margin: 0 0 0 0;
+        padding-top: 50px;
     }
 }
 @media (max-width: 1200px){
@@ -488,15 +500,13 @@ footer .inner .lower p {
     figure .inner h1 a{
         font: normal 60px/1 "arial";
     }
-    #who .intro .who_img img{
-        display:none;
-    }
     #who .intro .who_right {
         font-size:15px;
-        justify-content:right;
+        justify-content: center;
+        text-align:center;
+        float:right;
     }
     #who_right_down li{
-        text-align:center;
         margin-right:30%;
     }
     .slide{
@@ -523,8 +533,15 @@ footer .inner .lower p {
     footer .inner h1 {
         text-align:center;
     }
+}@media (max-width: 900px){
+    figure .inner h1{
+        font: bold 64px/1 "arial";
+    }
 }
 @media (max-width: 760px){
+    figure .inner h1{
+        font: normal 30px/1 "arial";
+    }
     header .inner h1 a{
         font: bold 12px/1 "arial";
     }
@@ -537,9 +554,6 @@ footer .inner .lower p {
         color: #555;
         padding: 5px 10px;
     }
-    figure .inner h1{
-        font: normal 40px/1 "arial";
-    }
     #who .who_right p{
         text-align:center;
         font-size:13px;
@@ -549,7 +563,7 @@ footer .inner .lower p {
     }
     #who .who_right_down li{
         font-size:13px;
-        text-align:center;
+        justify-content:center;
     }
     .slide_item.item1 img{
         height:30%;
@@ -558,13 +572,14 @@ footer .inner .lower p {
         height:40%;
     }
     .slide_item.item3 img {
-        height:40%;
+        height:25%;
+        width:50%;
     }
     .slide_item.item4 img {
-        height:40%;
+        height:25%;
     }
     .slide_item.item5 img {
-        height:40%;
+        height:30%;
     }
 }
 @media (max-width: 384px){
@@ -588,15 +603,12 @@ footer .inner .lower p {
         text-align:center;
     }
     figure .inner a{
-        width: 100px;
-        text-align: center;
+        display: flex;
+        justify-content: center;
     }
     /*who*/
     #who .intro {
         padding: 0 0 0 0%;
-    }
-    #who .intro .who_right{
-        margin: 10% 10% 10% 10%;
     }
     #who .who_right_down{
         padding: 0 0 0 15%;
