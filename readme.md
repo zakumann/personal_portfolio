@@ -2,6 +2,8 @@
 
 작업 기간: 2023년 7월 3일 ~ 7월 15일 ()
 
+[포트폴리오 주소](https://zakumann.github.io/personal_portfolio/)
+
 # 개요
 
 인터랙티브 웹 페이지 만들기를 참고해서 웹페이지를 제작했음.
